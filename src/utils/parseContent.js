@@ -17,7 +17,6 @@ export default function parseContent(content)
             Type:type="",
             DIR="",
             slug,
-            thumbnail
         } = temp;
 
         onLandingPage = !!onLandingPage;
@@ -25,7 +24,7 @@ export default function parseContent(content)
         if (onLandingPage)
             landing.push({title, DIR, DOP, videoID, slug});
 
-        let project = {title, slug, thumbnail, DIR, DOP, videoID};
+        let project = {title, slug, DIR, DOP, videoID};
 
         bySlug[slug] = {title, DIR, DOP, videoID};
 
