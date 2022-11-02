@@ -8,7 +8,7 @@
     </router-link>
     <div class="video">
       <iframe
-          :src="project.url + '?autoplay=1&title=0&color=0027FF'"
+          :src="`https://player.vimeo.com/video/${project['videoID']}?autoplay=1&title=0&color=0027FF`"
           allow="autoplay; fullscreen" allowfullscreen>
       </iframe>
       <div class="desc">

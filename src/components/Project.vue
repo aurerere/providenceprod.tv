@@ -1,6 +1,6 @@
 <template>
   <router-link :to="'/work/' + project['slug']">
-    <div class="card" :style="'background-image: url(' + project['thumbnail'] + ')'">
+    <div class="card" :style="`background-image: url(https://vumbnail.com/${project['videoID']}.jpg)`">
       <div class="content">
         <h1>{{project['title']}}</h1>
         <div class="credits">
@@ -13,8 +13,11 @@
 </template>
 
 <script>
+import LoadingIndicator from "@/components/ui/LoadingIndicator";
+
 export default {
   name: "Project",
+  components: {LoadingIndicator},
   props: {
     project: {
       type: Object,
@@ -26,9 +29,9 @@ export default {
 
 <style scoped>
 .card {
-  width: 500px;
+  width: 100%;
   aspect-ratio: 16/9;
-  background-color: var(--blue);
+  background-color: #141414;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -46,12 +49,12 @@ export default {
   box-sizing: border-box;
   opacity: 0;
   transition: opacity .3s;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .9);
   -webkit-backface-visibility: hidden;
 }
 
 .content h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 

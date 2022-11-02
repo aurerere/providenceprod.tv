@@ -8,6 +8,16 @@
   --blue: #0027FF;
 }
 
+::-webkit-scrollbar {
+  position: fixed;
+  right: 0;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
 body {
   background: var(--bg);
   color: var(--blue);
@@ -15,6 +25,7 @@ body {
   padding: 0;
   font-family: alternate-gothic-atf, sans-serif;
   -webkit-font-smoothing: antialiased;
+  outline: none;
   -moz-osx-font-smoothing: grayscale;
 }
 

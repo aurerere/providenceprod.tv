@@ -10,7 +10,7 @@ export default function parseContent(content)
     {
         let temp = content[i].fields;
         let {
-            "Vimeo URL":url="",
+            "Vimeo ID":videoID="",
             "Titre":title,
             DOP="",
             "Sur la page d'accueil": onLandingPage,
@@ -23,11 +23,11 @@ export default function parseContent(content)
         onLandingPage = !!onLandingPage;
 
         if (onLandingPage)
-            landing.push({title, DIR, DOP, url, slug});
+            landing.push({title, DIR, DOP, videoID, slug});
 
-        let project = {title, slug, thumbnail, DIR, DOP, url};
+        let project = {title, slug, thumbnail, DIR, DOP, videoID};
 
-        bySlug[slug] = {title, DIR, DOP, url};
+        bySlug[slug] = {title, DIR, DOP, videoID};
 
         if (!type) {
             projects['unclassified'] ?

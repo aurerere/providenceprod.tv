@@ -57,6 +57,6 @@ nav {
 }
 
 nav.background {
-  background-color: #000000;
+  background-color: var(--bg);
 }
 </style>
