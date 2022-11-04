@@ -6,6 +6,7 @@
 :root {
   --bg: #000000;
   --blue: #0027FF;
+  --padding: 40px;
 }
 
 ::-webkit-scrollbar {
@@ -27,6 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
   outline: none;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p {
@@ -50,5 +52,11 @@ a:hover {
 
 nav a.router-link-exact-active {
   text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  :root {
+    --padding: 20px;
+  }
 }
 </style>

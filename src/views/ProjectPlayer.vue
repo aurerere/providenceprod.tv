@@ -1,10 +1,14 @@
 <template>
+  <Navigation :work="true"/>
   <div class="loading" v-if="isLoading">
     <LoadingIndicator/>
   </div>
   <div class="container" v-else>
-    <router-link to="/work">
-      <h1>← See all projects</h1>
+    <router-link to="/work" >
+      <div class="back">
+        <img src="@/assets/back.svg" alt="back">
+        <h1>work</h1>
+      </div>
     </router-link>
     <div class="video">
       <iframe
@@ -23,10 +27,11 @@
 <script>
 import loadContent from "@/utils/loadContent";
 import LoadingIndicator from "@/components/ui/LoadingIndicator";
+import Navigation from "@/components/Navigation";
 
 export default {
   name: "ProjectPlayer",
-  components: {LoadingIndicator},
+  components: {Navigation, LoadingIndicator},
   data() {
     return {
       isLoading: this.$store.state.projects === null,
@@ -68,22 +73,23 @@ export default {
   align-items: center;
 }
 .container {
-  padding: 40px;
+  padding: 120px var(--padding) var(--padding) var(--padding);
   min-height: 100vh;
   box-sizing: border-box;
 }
 
 iframe {
-  width: 70%;
+  width: 100%;
+  max-height: 63vh;
   aspect-ratio: 16/9;
   border: none;
 }
 
 .video {
-  margin-top: 40px;
+  margin-top: 24px;
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .desc h1 {
@@ -94,4 +100,18 @@ a {
   display: inline-block;
 }
 
+.back {
+  display: flex;
+  gap: 12px;
+}
+
+.back img {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding-top: 80px;
+  }
+}
 </style>

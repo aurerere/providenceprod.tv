@@ -45,7 +45,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: var(--padding);
   box-sizing: border-box;
   opacity: 0;
   transition: opacity .3s;

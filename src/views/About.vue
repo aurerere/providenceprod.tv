@@ -35,6 +35,7 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 88px;
+  padding: 0 var(--padding);
 }
 h1 {
   text-align: center;

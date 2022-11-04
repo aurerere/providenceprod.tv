@@ -48,10 +48,10 @@ main {
   width: 100%;
   min-height: calc(100vh - 124px);
   box-sizing: border-box;
-  padding: 0 40px 40px 40px;
+  padding: 0 var(--padding) var(--padding) var(--padding);
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--padding);
 }
 
 .loading {
@@ -64,7 +64,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   margin-top: 12px;
-  gap: 40px;
+  gap: var(--padding);
 }
 
 @media (max-width: 1300px) {
@@ -75,6 +75,12 @@ main {
 @media (max-width: 900px) {
   .projects-wrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    top: 80px;
   }
 }
 </style>

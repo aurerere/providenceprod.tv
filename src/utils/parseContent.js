@@ -11,6 +11,7 @@ export default function parseContent(content)
         let temp = content[i].fields;
         let {
             "Vimeo ID":videoID="",
+            "Preview ID + Token":previewID="",
             "Titre":title,
             DOP="",
             "Sur la page d'accueil": onLandingPage,
@@ -22,7 +23,7 @@ export default function parseContent(content)
         onLandingPage = !!onLandingPage;
 
         if (onLandingPage)
-            landing.push({title, DIR, DOP, videoID, slug});
+            landing.push({title, DIR, DOP, previewID, slug});
 
         let project = {title, slug, DIR, DOP, videoID};
 
