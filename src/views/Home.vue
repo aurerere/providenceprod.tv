@@ -128,5 +128,6 @@ export default {
 }
 .controls img {
   cursor: pointer;
+  height: 50px;
 }
 </style>

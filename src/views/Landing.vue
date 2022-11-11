@@ -121,8 +121,8 @@ svg {
   }
   3% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   5% {
     opacity: 0.4;
@@ -130,13 +130,13 @@ svg {
   }
   6% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   48% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   49% {
     opacity: 0.4;
@@ -144,13 +144,13 @@ svg {
   }
   50% {
     opacity: 1;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   60% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   61% {
     opacity: 0.4;
@@ -158,8 +158,8 @@ svg {
   }
   62% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   63% {
     opacity: 0.4;
@@ -167,8 +167,8 @@ svg {
   }
   64% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   65% {
     opacity: 0.4;
@@ -176,13 +176,13 @@ svg {
   }
   66% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   99% {
     opacity: 0.9;
-    fill: white;
-    filter: drop-shadow(0px 0px 7px blue);
+    fill: var(--fill-neon-color);
+    filter: drop-shadow(0px 0px var(--neon-diffusion) var(--neon-color));
   }
   100% {
     filter: none;

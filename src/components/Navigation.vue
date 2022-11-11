@@ -130,7 +130,7 @@ nav.background {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 40px;
+  margin-top: 20px;
   height: 100%;
 }
 

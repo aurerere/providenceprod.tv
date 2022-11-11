@@ -10,8 +10,8 @@
       <router-link :to="'/work/' + slug">
         <h1>{{ name }}</h1>
       </router-link>
-      <h2>DIR {{ DIR }}</h2>
-      <h2>DOP {{ DOP }}</h2>
+      <h2><span class="dir-dop">DIR</span> {{ DIR }}</h2>
+      <h2><span class="dir-dop">DOP</span> {{ DOP }}</h2>
     </div>
   </div>
 </template>
@@ -71,11 +71,15 @@ iframe {
 }
 
 .credits h1 {
-  font-size: 100px;
+  font-size: 90px;
   margin-bottom: 20px;
 }
 .credits h2 {
-  font-size: 50px;
+  font-size: 45px;
+}
+
+.dir-dop {
+  font-size: 35px;
 }
 
 /* we will explain what these classes do next! */
@@ -97,12 +101,19 @@ a {
   width: fit-content;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 650px) {
   .credits h1 {
     font-size: 50px;
   }
   .credits h2 {
     font-size: 30px;
+  }
+  .dir-dop {
+    font-size: 25px;
   }
 }
 </style>

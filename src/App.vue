@@ -7,6 +7,9 @@
   --bg: #000000;
   --blue: #0027FF;
   --padding: 40px;
+  --fill-neon-color: #8782e5;
+  --neon-diffusion: 14px;
+  --neon-color: blue;
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +46,7 @@ a {
 }
 
 nav a {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 a:hover {

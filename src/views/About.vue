@@ -5,7 +5,7 @@
       We do music videos, short films, corporate and digital content.</h1>
     <div class="social">
       <a href="https://www.instagram.com/providenceprod.tv/" target="_blank">
-        <h1>@PROVIDENCE.TV</h1>
+        <h1>@PROVIDENCEPROD.TV</h1>
       </a>
       <a href="mailto:hello@providenceprod.tv">
         <h1>hello@providenceprod.tv</h1>
@@ -39,6 +39,7 @@ export default {
 }
 h1 {
   text-align: center;
+  font-size: 1.7rem;
 }
 
 .social {

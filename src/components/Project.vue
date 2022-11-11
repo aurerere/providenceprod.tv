@@ -4,8 +4,8 @@
       <div class="content">
         <h1>{{project['title']}}</h1>
         <div class="credits">
-          <h2>DIR {{project['DIR']}}</h2>
-          <h2>DOP {{project['DOP']}}</h2>
+          <h2><span class="dir-dop">DIR</span> {{project['DIR']}}</h2>
+          <h2><span class="dir-dop">DOP</span> {{project['DOP']}}</h2>
         </div>
       </div>
     </div>
@@ -56,6 +56,10 @@ export default {
 .content h2 {
   font-size: 1.3rem;
   margin: 0;
+}
+
+.dir-dop {
+  font-size: 1.1rem;
 }
 
 .credits {
