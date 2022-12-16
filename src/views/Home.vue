@@ -117,7 +117,7 @@ export default {
   overflow: hidden;
 }
 .controls {
-  position: absolute;
+  position: fixed;
   bottom: var(--padding);
   left: 0;
   width: 100%;
