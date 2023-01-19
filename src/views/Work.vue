@@ -34,6 +34,8 @@ export default {
   mounted() {
     if (this.$store.state.projects === null)
       loadContent().then(() => this.isLoading = false);
+
+    window.scrollTo(0, -1);
   },
   created() {
     document.title = "WORK - PROVIDENCE";

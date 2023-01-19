@@ -23,7 +23,7 @@
 }
 
 body {
-  background: var(--bg);
+  background: url('https://cliply.co/wp-content/uploads/2021/07/402107790_STATIC_NOISE_400.gif') black;
   color: var(--blue);
   margin: 0;
   padding: 0;
